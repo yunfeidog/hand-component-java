@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/decorator_pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/facade/pom.xml" />
+        <option value="$PROJECT_DIR$/facade/my_plugin_api/pom.xml" />
+        <option value="$PROJECT_DIR$/facade/count_plugin/pom.xml" />
       </list>
     </option>
   </component>
