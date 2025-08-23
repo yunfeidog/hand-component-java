@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import plus.yunfei.pay.PayService;
+import plus.yunfei.pay.WxPayService;
 
 import java.util.List;
 import java.util.Map;
@@ -16,9 +17,14 @@ public class TestController {
 
     private Map<PayType, PayService> payServiceMap;
 
-    @RequestMapping("/")
-    public void test() {
+    @Autowired
+    private WxPayService wxPayService;
 
+    @RequestMapping("/")
+    public void test(String payType) {
+        PayType userType = PayType.typeOf(payType);
+        PayService payService = payServiceMap.getOrDefault(userType, wxPayService);
+        payService.pay();
     }
 
     @Autowired
