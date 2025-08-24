@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/facade/my_plugin_api/pom.xml" />
         <option value="$PROJECT_DIR$/facade/count_plugin/pom.xml" />
         <option value="$PROJECT_DIR$/stragegy-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/observer/pom.xml" />
       </list>
     </option>
   </component>
